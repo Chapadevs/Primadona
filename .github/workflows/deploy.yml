@@ -19,15 +19,12 @@ jobs:
       with:
         node-version: '20'
         cache: 'npm'
-        cache-dependency-path: primadonna-salon/package-lock.json
 
     - name: Install dependencies
       run: npm ci
-      working-directory: primadonna-salon
 
     - name: Build
       run: npm run build
-      working-directory: primadonna-salon
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
@@ -37,7 +34,7 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       if: github.ref == 'refs/heads/main'
       with:
-        path: primadonna-salon/dist
+        path: ./dist
 
   deploy:
     environment:
