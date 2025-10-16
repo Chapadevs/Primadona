@@ -1,4 +1,8 @@
 import React from 'react';
+import hair1 from '/images/hair-1.png';
+import hair2 from '/images/hair-2.png';
+import hair3 from '/images/hair-3.png';
+import hair4 from '/images/hair-4.png';
 
 const Gallery = () => {
   return (
@@ -10,7 +14,7 @@ const Gallery = () => {
             <img 
               alt="Blonde balayage hair" 
               className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" 
-              src="public/images/hair-1.png"
+              src={hair1}
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
           </div>
@@ -18,7 +22,7 @@ const Gallery = () => {
             <img 
               alt="Woman with elegant updo" 
               className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" 
-              src="public/images/hair-2.png"
+              src={hair2}
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
           </div>
@@ -26,7 +30,7 @@ const Gallery = () => {
             <img 
               alt="Rich brunette hair color" 
               className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" 
-              src="public/images/hair-3.png"
+              src={hair3}
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
           </div>
@@ -34,7 +38,7 @@ const Gallery = () => {
             <img 
               alt="Woman with stylish short haircut" 
               className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" 
-              src="public/images/hair-4.png"
+              src={hair4}
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
           </div>
